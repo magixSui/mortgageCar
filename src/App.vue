@@ -12,7 +12,7 @@
     <van-tabbar-item icon="exchange">代理</van-tabbar-item>
     <van-tabbar-item icon="friends-o">我的</van-tabbar-item>
   </van-tabbar>
-  </div> 
+  </div>
 </template>
 
 <script>
