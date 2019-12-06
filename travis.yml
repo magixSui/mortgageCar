@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - node # 代表最新稳定版
+before_install:
+  - export TZ='Asia/Shanghai' # 更改时区
+install:
+  - npm install
+script:
+  - npm run build
+deploy:
+  name: $GIT_NAME
+  email: $GIT_EMAIL
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
+  local-dir: ./dist/
+  
