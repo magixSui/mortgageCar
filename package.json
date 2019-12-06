@@ -1,6 +1,6 @@
 {
-  "name": "pc-manage",
-  "sideEffects": false,
+  "name": "mortgage-car",
+  "sideEffects": true,
   "version": "1.0.0",
   "description": "manage system by webpack4 and vue2",
   "private": true,
@@ -16,13 +16,18 @@
     "@babel/core": "^7.7.4",
     "@babel/polyfill": "^7.7.0",
     "@babel/preset-env": "^7.7.4",
+    "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.2.0",
+    "cross-env": "^6.0.3",
+    "css-loader": "^1.0.0",
     "file-loader": "^4.2.0",
     "friendly-errors-webpack-plugin": "^1.7.0",
     "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
@@ -34,7 +39,7 @@
     "webpack-merge": "^4.2.2"
   },
   "scripts": {
-    "dev": "webpack-dev-server --open --config build/webpack.dev.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --config build/webpack.dev.js",
     "build": "webpack --config build/webpack.prod.js",
     "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"

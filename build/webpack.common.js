@@ -3,6 +3,9 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin')
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
+let devMode = process.env.NODE_ENV === 'development' ? true : false
 
 module.exports = {
   entry: {
@@ -34,16 +37,29 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: 'vue-loader',
+        options: {
+          extractCSS: true
+         }
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.(sa|sc|c)ss$/,
+        use: devMode ? ['style-loader'] : [
+          MiniCssExtractPlugin.loader,
+          'css-loader', 'sass-loader', 'postcss-loader'],
       },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
+      // {
+      //   test: /\.(sa|sc|c)ss$/,
+      //   use: ['to-string-loader', 'style-loader', 'css-loader', 'sass-loader'],
+      // },
+      // {
+      //   test: /\.css$/,
+      //   use: ['style-loader', 'css-loader']
+      // },
+      // {
+      //   test: /\.s[ac]ss$/i,
+      //   use: ['style-loader', 'css-loader', 'sass-loader'],
+      // },
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [{
