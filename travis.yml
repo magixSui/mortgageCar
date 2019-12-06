@@ -1,20 +1,22 @@
-language: node_js
+language: node_js # 构建所需的语言环境
 node_js:
-  - node # 代表最新稳定版
+    - node  # 对应的版本
 before_install:
-  - export TZ='Asia/Shanghai' # 更改时区
+    - export TZ='Asia/Shanghai' # 更改时区
 install:
-  - npm install
+    - npm install
 script:
-  - npm run build
+    - npm run build
+cache:
+    directories:
+        - node_modules # 依赖缓存的目录
 deploy:
-  name: $GIT_NAME
-  email: $GIT_EMAIL
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: master
-  local-dir: ./dist/
-  
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    local-dir: ./dist/
+    keep_history: true
+    name: $GIT_NAME
+    email: $GIT_EMAIL
+    on: 
+        branch: master
