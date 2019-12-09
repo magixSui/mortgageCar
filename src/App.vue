@@ -6,11 +6,11 @@
     <router-view v-if="!$route.meta.keepAlive"/> -->
     <router-view/>
     <van-tabbar v-model="active">
-    <van-tabbar-item icon="home-o">主页</van-tabbar-item>
-    <van-tabbar-item icon="shopping-cart-o">买车</van-tabbar-item>
-    <van-tabbar-item icon="balance-o">卖车</van-tabbar-item>
-    <van-tabbar-item icon="exchange">代理</van-tabbar-item>
-    <van-tabbar-item icon="friends-o">我的</van-tabbar-item>
+    <van-tabbar-item name="main" icon="home-o">主页</van-tabbar-item>
+    <van-tabbar-item name="buy" icon="shopping-cart-o">买车</van-tabbar-item>
+    <van-tabbar-item name="sell" icon="balance-o">卖车</van-tabbar-item>
+    <van-tabbar-item name="proxy" icon="exchange">代理</van-tabbar-item>
+    <van-tabbar-item name="mine" icon="friends-o">我的</van-tabbar-item>
   </van-tabbar>
   </div>
 </template>
@@ -20,7 +20,12 @@
     name: 'App',
     data() {
       return {
-        active: 0
+        active: 'main'
+      }
+    },
+    watch: {
+      active(v) {
+        this.$router.push(v);
       }
     }
   }

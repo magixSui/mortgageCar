@@ -45,9 +45,14 @@
       </div>
     </section>
 
+    <div class="grey-cube"></div>
+
     <section class="section">
       <van-button class="shop-btn" icon="cart-o" type="primary">立即选购</van-button>
     </section>
+
+    <div class="grey-cube"></div>
+
     <h3 class="sub-title">好生活没那么贵</h3>
     <section class="sub-modules clearfix">
       <div class="sub-module">
@@ -141,6 +146,8 @@ export default {
        align-items: center;
        justify-content: center;
        margin:1%;
+       padding:1rem 0;
+       background:#f9f9f9;
        i {
          margin-bottom:.1rem;
        }
