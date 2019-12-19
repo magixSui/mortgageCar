@@ -5,6 +5,7 @@
   "description": "manage system by webpack4 and vue2",
   "private": true,
   "dependencies": {
+    "axios": "^0.19.0",
     "fastclick": "^1.0.6",
     "vant": "^2.2.16",
     "vue": "^2.6.10",

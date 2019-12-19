@@ -19,6 +19,7 @@
         price="302500.00"
         title="奥迪TT2015款2.0T自动"
         :thumb="car"
+        @click="routeTo"
       >
         <div slot="tags">
           <van-tag plain type="danger">45TFS|四驱</van-tag>
@@ -71,6 +72,9 @@ export default {
           this.finished = true;
         }
       }, 500);
+    },
+    routeTo() {
+      this.$router.push('detail');
     }
   }
 }
