@@ -4,6 +4,12 @@
 
 .mb-buy .header{height:3rem;display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;padding:0 .6rem}.mb-buy .search{-webkit-box-flex:1;flex-grow:1}.mb-buy .van-list{margin-bottom:50px}.mb-buy .van-image img{-o-object-fit:cover !important;object-fit:cover !important}.mb-buy .van-card__content{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:justify;justify-content:space-between}.mb-buy .van-card__price{color:#323233;font-weight:500}
 
+.mb-detail .f-row{display:-webkit-box;display:flex}.mb-detail .mr-4{margin-right:4px}.mb-detail .content{padding:0 1rem}.mb-detail .box{-webkit-box-align:center;align-items:center;-webkit-box-pack:justify;justify-content:space-between;padding:1rem}.mb-detail .box .price{font-size:1.2rem;color:crimson}.mb-detail .swipe{width:100%;height:50vw}.mb-detail .swipe img{width:100%;height:50vw;-o-object-fit:contain;object-fit:contain}.mb-detail .title{font-size:1.2rem}.mb-detail .info{font-size:.8rem;color:#38f;border:1px solid #ececec;border-radius:.4rem;padding:1rem}.mb-detail .small-foot{font-size:.6rem;display:-webkit-box;display:flex;color:#999;-webkit-box-pack:center;justify-content:center}
+
+.mb-user-center .header{display:-webkit-box;display:flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:justify;justify-content:space-between;padding:2rem 1rem}.mb-user-center .mb-4{margin-bottom:4px}.mb-user-center .title{font-size:1.2rem}
+
+.mb-sell .button{margin-top:1rem}.mb-sell .btn-container{padding:0 1rem}
+
 /*
  * HTML5 Boilerplate
  *
