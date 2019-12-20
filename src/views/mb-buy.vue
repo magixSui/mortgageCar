@@ -50,6 +50,11 @@ export default {
       finished: false
     }
   },
+  created() {
+    this.axios.get('cars').then(res => {
+      console.log(res);
+    });
+  },
   methods: {
     onRefresh() {
       setTimeout(() => {

@@ -10,7 +10,7 @@
     <van-tabbar-item name="buy" icon="shopping-cart-o">买车</van-tabbar-item>
     <van-tabbar-item name="sell" icon="balance-o">卖车</van-tabbar-item>
     <van-tabbar-item name="proxy" icon="exchange">代理</van-tabbar-item>
-    <van-tabbar-item name="mine" icon="friends-o">我的</van-tabbar-item>
+    <van-tabbar-item name="center" icon="friends-o">我的</van-tabbar-item>
   </van-tabbar>
   </div>
 </template>

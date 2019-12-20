@@ -20,6 +20,7 @@ module.exports = {
       'vue$':'vue/dist/vue.js',
       '@':path.resolve(__dirname,'../src'),
       'style': path.resolve(__dirname,'../src/assets/style'),
+      'utils': path.resolve(__dirname,'../src/utils'),
     },
     extensions: ['*', '.js', '.vue', '.json']
   },

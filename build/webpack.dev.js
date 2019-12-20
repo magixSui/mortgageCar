@@ -8,8 +8,8 @@ module.exports = merge(common, {
   devServer: {
     contentBase: './dist',
     proxy: {
-      '/basic': {
-        target: 'http://192.168.200.222:8082', //目标接口域名
+      '/': {
+        target: 'http://magix.xyz:1337', //目标接口域名
         changeOrigin: true, //是否跨域
       }
     }
