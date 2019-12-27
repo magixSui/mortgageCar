@@ -1,0 +1,219 @@
+{
+  "id": "1372318",
+  "name": "myfont",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15372",
+      "name": "图片",
+      "font_class": "tupian",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "134653",
+      "name": "买车",
+      "font_class": "maiche",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "166654",
+      "name": "修改",
+      "font_class": "xiugai",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "376359",
+      "name": "免责声明",
+      "font_class": "declare",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "530514",
+      "name": "两融开通创业板",
+      "font_class": "liangrongkaitongchuangyeban01",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "551449",
+      "name": "知识",
+      "font_class": "zhishi",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "836720",
+      "name": "list",
+      "font_class": "list",
+      "unicode": "e769",
+      "unicode_decimal": 59241
+    },
+    {
+      "icon_id": "845853",
+      "name": "安全",
+      "font_class": "anquan",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "880327",
+      "name": "label",
+      "font_class": "label",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "1119593",
+      "name": "swt-icon-滴滴出行",
+      "font_class": "swticondidichuxing",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "1177123",
+      "name": "车辆估价（车商工具）",
+      "font_class": "iconfontzhizuobiaozhun0248",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "1210727",
+      "name": "多选",
+      "font_class": "duoxuan",
+      "unicode": "e7f9",
+      "unicode_decimal": 59385
+    },
+    {
+      "icon_id": "1249080",
+      "name": "资质",
+      "font_class": "zizhi",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "1511340",
+      "name": "上传",
+      "font_class": "upload",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "1766474",
+      "name": "符号-单行输入框",
+      "font_class": "danhangshurukuang",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "2019066",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e7ab",
+      "unicode_decimal": 59307
+    },
+    {
+      "icon_id": "2506193",
+      "name": "时间",
+      "font_class": "shijian",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "3302169",
+      "name": "农民",
+      "font_class": "nongmin",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "3722146",
+      "name": "成交",
+      "font_class": "chengjiao",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "4605589",
+      "name": "代理账号管理",
+      "font_class": "dailizhanghaoguanli",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    },
+    {
+      "icon_id": "4906240",
+      "name": "按钮组",
+      "font_class": "anniuzu",
+      "unicode": "e782",
+      "unicode_decimal": 59266
+    },
+    {
+      "icon_id": "4933208",
+      "name": "男",
+      "font_class": "nan",
+      "unicode": "e6ec",
+      "unicode_decimal": 59116
+    },
+    {
+      "icon_id": "5925272",
+      "name": "学生管理",
+      "font_class": "xueshengguanli",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "6366905",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "6742309",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "7501070",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "9097151",
+      "name": "女",
+      "font_class": "ziyuan",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "10147131",
+      "name": "radio",
+      "font_class": "radio",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "10194322",
+      "name": "实名",
+      "font_class": "shiming",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "12097740",
+      "name": "我要卖车",
+      "font_class": "woyaomaiche",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    }
+  ]
+}

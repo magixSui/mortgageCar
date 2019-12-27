@@ -5,7 +5,7 @@
     </keep-alive>
     <router-view v-if="!$route.meta.keepAlive"/> -->
     <router-view/>
-    <van-tabbar v-model="active">
+    <van-tabbar v-model="active" class="vant-tab">
     <van-tabbar-item name="main" icon="home-o">主页</van-tabbar-item>
     <van-tabbar-item name="buy" icon="shopping-cart-o">买车</van-tabbar-item>
     <van-tabbar-item name="sell" icon="balance-o">卖车</van-tabbar-item>
@@ -31,9 +31,10 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   #app {
-    height:100vh;
+    min-height:100vh;
     font-size: initial;
+    padding-bottom:50px;
   }
 </style>

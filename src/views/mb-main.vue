@@ -12,35 +12,43 @@
     </van-swipe>
     <section class="modules clearfix">
       <div class="module">
-        <van-icon name="shopping-cart" color="#318fd5" size="1.6rem" />
+        <i class="iconfont icon-maiche" style="color:#318fd5"></i>
+        <!-- <van-icon name="iconfont icon-maiche" color="#318fd5" size="1.6rem" /> -->
         <span>买车</span>
       </div>
       <div class="module">
-        <van-icon name="gold-coin" color="#f39927" size="1.6rem" />
+        <i class="iconfont icon-woyaomaiche" style="color:#f39927"></i>
+        <!-- <van-icon name="gold-coin" color="#f39927" size="1.6rem" /> -->
         <span>卖车</span>
       </div>
       <div class="module">
-        <van-icon name="exchange" color="#f1594b" size="1.6rem" />
+        <i class="iconfont icon-dailizhanghaoguanli" style="color:#f1594b"></i>
+        <!-- <van-icon name="exchange" color="#f1594b" size="1.6rem" /> -->
         <span>代理</span>
       </div>
       <div class="module">
-        <van-icon name="gold-coin" color="#29ab91" size="1.6rem" />
+        <i class="iconfont icon-iconfontzhizuobiaozhun0248" style="color:#29ab91"></i>
+        <!-- <van-icon name="gold-coin" color="#29ab91" size="1.6rem" /> -->
         <span>估价</span>
       </div>
       <div class="module">
-        <van-icon name="question" color="#29ab91" size="1.6rem" />
+        <i class="iconfont icon-zhishi" style="color:#29ab91"></i>
+        <!-- <van-icon name="question" color="#29ab91" size="1.6rem" /> -->
         <span>赤兔知识</span>
       </div>
       <div class="module">
-        <van-icon name="comment" color="#f1594b" size="1.6rem" />
+        <i class="iconfont icon-zizhi" style="color:#f1594b"></i>
+        <!-- <van-icon name="comment" color="#f1594b" size="1.6rem" /> -->
         <span>公司资质</span>
       </div>
       <div class="module">
-        <van-icon name="pending-payment" color="#f39927" size="1.6rem" />
+        <i class="iconfont icon-chengjiao" style="color:#f39927"></i>
+        <!-- <van-icon name="pending-payment" color="#f39927" size="1.6rem" /> -->
         <span>最近成交</span>
       </div>
       <div class="module">
-        <van-icon name="youzan-shield" color="#318fd5" size="1.6rem" />
+        <i class="iconfont icon-anquan" style="color:#318fd5"></i>
+        <!-- <van-icon name="youzan-shield" color="#318fd5" size="1.6rem" /> -->
         <span>安全保障</span>
       </div>
     </section>
@@ -56,27 +64,33 @@
     <h3 class="sub-title">好生活没那么贵</h3>
     <section class="sub-modules clearfix">
       <div class="sub-module">
-        <van-icon name="shopping-cart" color="#318fd5" size="1.6rem" />
+        <i class="iconfont icon-nan" style="color:#318fd5"></i>
+        <!-- <van-icon name="shopping-cart" color="#318fd5" size="1.6rem" /> -->
         <span>农民</span>
       </div>
       <div class="sub-module">
-        <van-icon name="gold-coin" color="#f39927" size="1.6rem" />
+        <i class="iconfont icon-xueshengguanli" style="color:#f39927"></i>
+        <!-- <van-icon name="gold-coin" color="#f39927" size="1.6rem" /> -->
         <span>学生</span>
       </div>
       <div class="sub-module">
-        <van-icon name="exchange" color="#f1594b" size="1.6rem" />
+        <i class="iconfont icon-anquan" style="color:#f1594b"></i>
+        <!-- <van-icon name="exchange" color="#f1594b" size="1.6rem" /> -->
         <span>老婆</span>
       </div>
       <div class="sub-module">
-        <van-icon name="gold-coin" color="#29ab91" size="1.6rem" />
+        <i class="iconfont icon-xiugai" style="color:#29ab91"></i>
+        <!-- <van-icon name="gold-coin" color="#29ab91" size="1.6rem" /> -->
         <span>改装</span>
       </div>
       <div class="sub-module">
-        <van-icon name="question" color="#29ab91" size="1.6rem" />
+        <i class="iconfont icon-liangrongkaitongchuangyeban01" style="color:#29ab91"></i>
+        <!-- <van-icon name="question" color="#29ab91" size="1.6rem" /> -->
         <span>创业</span>
       </div>
       <div class="sub-module">
-        <van-icon name="comment" color="#f1594b" size="1.6rem" />
+        <i class="iconfont icon-swticondidichuxing" style="color:#ec850e"></i>
+        <!-- <van-icon class="iconfont" class-prefix='icon' name="list" color="#f1594b" size="1.6rem" /> -->
         <span>滴滴</span>
       </div>
     </section>
@@ -104,6 +118,10 @@ export default {
 
 <style lang="scss">
  .mb-main {
+   .iconfont {
+     font-size:1.6rem;
+     color:#318fd5;
+   }
    .header {
      height:3rem;
      display:flex;
