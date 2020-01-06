@@ -9,7 +9,7 @@ module.exports = merge(common, {
     contentBase: './dist',
     proxy: {
       '/': {
-        target: 'http://magix.xyz:1337', //目标接口域名
+        target: 'http://localhost:3000', //目标接口域名
         changeOrigin: true, //是否跨域
       }
     }
