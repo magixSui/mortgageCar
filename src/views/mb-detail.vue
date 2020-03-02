@@ -9,14 +9,19 @@
     <div class="grey-cube"></div>
 
     <section class="box f-row">
-      <span class="price">30.25万</span>
+      <span class="price">{{ car.price }}</span>
       <div>
-        <van-button type="primary">查询底价</van-button>
-        <van-button type="primary">我要砍价</van-button>
+        <a class="phone" href="tel:400-0000-688">电话咨询</a>
+        <!-- <van-button type="primary" >电话咨询</van-button> -->
+        <!-- <van-button type="primary">我要砍价</van-button> -->
       </div>
     </section>
+
+    <div class="grey-line"></div>
+
     <section class="content">
-      <h1 class="title">奥迪TT2015款2.0T自动</h1>
+      <h1 class="title">{{ car.title }}</h1>
+      <img v-for="(item, index) in car.images" class="image" :src="item" :key="index"/>
       <section>
         <span class="mr-4">售后</span><van-tag class="mr-4" color="blue">包退</van-tag><van-tag class="mr-4" color="#f2826a">包置换</van-tag><van-tag color="#999">车丢包赔</van-tag>
       </section>
@@ -27,10 +32,10 @@
       <h1 class="title">车辆档案</h1>
       <table border=1>
         <tr>
-          <td>车龄</td><td>4年</td><td>行驶里程</td><td>7.7万公里</td>
+          <td>驱动</td><td>{{ car.drive }}</td><td>行驶里程</td><td>{{ car.mileage }}万公里</td>
         </tr>
         <tr>
-          <td>上牌</td><td>2015-07</td><td>车牌归属地</td><td>吉A</td>
+          <td>排量</td><td>{{ car.displacement }}</td><td>年份</td><td>{{ car.date.substring(0, 4) }}</td>
         </tr>
       </table>
 
@@ -55,13 +60,22 @@
 import image1 from '@/assets/images/apple-1.jpg'
 import image2 from '@/assets/images/apple-2.jpg'
 import image3 from '@/assets/images/apple-3.jpg'
+import API from 'utils/api';
 
 export default {
   name: 'mb_detail',
   data() {
     return {
-      images: [image1, image2, image3]
+      images: [image1, image2, image3],
+      car: {}
     }
+  },
+  mounted() {
+    this.axios.get(API.car.query, { params: {
+      id: this.$route.params._id
+    } }).then(res => {
+      this.car = res.data.car;
+    });
   }
 }
 </script>
@@ -96,7 +110,19 @@ export default {
      }
    }
    .title {
-     font-size:1.2rem;
+     border-left: 4px solid #38f;
+     font-size:1.1rem;
+     padding:0 .2rem;
+   }
+   .image {
+     width:100%;
+     margin-bottom:1rem;
+   }
+   .phone {
+     color:#fff;
+     background:#07c160;
+     padding:.6rem 1rem;
+     border-radius: 5px;
    }
    .info {
      font-size:.8rem;
@@ -110,6 +136,13 @@ export default {
      display:flex;
      color:#999;
      justify-content: center;
+   }
+   table {
+     font-size:.8rem;
+     color:#999;
+     td {
+       padding:.2rem;
+     }
    }
   }
 </style>

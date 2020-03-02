@@ -12,7 +12,7 @@ Vue.use(Router)
 export default new Router({
   routes: [{
     path: '/',
-    redirect: '/main'
+    redirect: '/buy'
   },
   {
     path: '/main',
@@ -31,7 +31,7 @@ export default new Router({
       keepAlive: false
     }
   }, {
-    path: '/detail',
+    path: '/detail/:_id',
     name: 'detail',
     component: Detail,
     meta: {
